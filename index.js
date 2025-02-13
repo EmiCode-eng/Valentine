@@ -51,15 +51,22 @@ buttonPrimary.addEventListener('click', () => {
 })
 
 buttonSecondary.addEventListener('click', () => {
-    image.src = `./assets/bp1.gif`
-    index++
+    if (index === 0) {
+      image.src = `./assets/bp1.gif`
+      index++
 
-    title.textContent = '¿Podrias reconsiderarlo? 😞'
+      title.textContent = '¿Podrias reconsiderarlo? 😞'
+      buttonPrimary.textContent = 'Si'
+    }
 
-    let currentWidth = buttonPrimary.offsetWidth
-    let currentHeight = buttonPrimary.offsetHeight
-    let currentSize = parseInt(window.getComputedStyle(buttonPrimary).fontSize)
-    buttonPrimary.style.width = (currentWidth + currentWidth * 0.2) + 'px'
-    buttonPrimary.style.height = (currentHeight + currentHeight * 0.2) + 'px'
-    buttonPrimary.style.fontSize = (currentSize + 5) + 'px'
+    if (index < 5) {
+      index++
+      
+      let currentWidth = buttonPrimary.offsetWidth
+      let currentHeight = buttonPrimary.offsetHeight
+      let currentSize = parseInt(window.getComputedStyle(buttonPrimary).fontSize)
+      buttonPrimary.style.width = (currentWidth + currentWidth * 0.2) + 'px'
+      buttonPrimary.style.height = (currentHeight + currentHeight * 0.2) + 'px'
+      buttonPrimary.style.fontSize = (currentSize + 5) + 'px'
+    }
 })
