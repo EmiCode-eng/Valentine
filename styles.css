@@ -18,9 +18,9 @@
 
 .wrapper {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     max-width: 500px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 #tag-img {
@@ -29,7 +29,7 @@
 }
 
 #title {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
     color: #f5e3ca;
