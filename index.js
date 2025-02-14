@@ -12,12 +12,12 @@ buttonPrimary.addEventListener('click', () => {
         image.src = './assets/gp1.gif'
         index++
 
-        title.textContent = '¿Segura? 🥹'
+        title.textContent = '¿De verdad? ¿Segura? 🥹💖'
         buttonPrimary.textContent = 'Segurisima'
     } else {
         image.src = './assets/gp2.webp'
 
-        title.textContent = '!Muchas gracias por ser mi valentin! (/≧▽≦)/ 💗'
+        title.textContent = ' ¡Muchas gracias por ser mi Valentín! Prometo hacerte sonreír (/≧▽≦)/ 💗'
         buttons.remove()
 
         const defaults = {
@@ -55,7 +55,7 @@ buttonSecondary.addEventListener('click', () => {
       image.src = `./assets/bp1.gif`
       index++
 
-      title.textContent = '¿Podrias reconsiderarlo? 😞'
+      title.textContent = '¿Segura? Podría ser divertido... 😞💕'
       buttonPrimary.textContent = 'Si'
     }
 
